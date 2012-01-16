@@ -200,6 +200,7 @@
  * timestamping regardless of debug value.
  */
 	//Configure::write('Asset.timestamp', true);
+
 /**
  * Compress CSS output by removing comments, whitespace, repeating tags, etc.
  * This requires a/var/cache directory to be writable by the web server for caching.
@@ -225,8 +226,8 @@
 	Configure::write('Acl.database', 'default');
 
 /**
- * If you are on PHP 5.3 uncomment this line and correct your server timezone
- * to fix the date & time related errors.
+ * Uncomment this line and correct your server timezone to fix 
+ * any date & time related errors.
  */
 	//date_default_timezone_set('UTC');
 
@@ -267,7 +268,7 @@
  *		'password' => 'password', //plaintext password (xcache.admin.pass)
  *	));
  *
- * Memcache (http://www.danga.com/memcached/)
+ * Memcache (http://memcached.org/)
  *
  * 	 Cache::config('default', array(
  *		'engine' => 'Memcache', //[required]
